@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     res.send('Hello from Express server!');
 });
 
-
+module.exports = app;
 
 
 const materialSchema = new mongoose.Schema({
@@ -35,10 +35,6 @@ const materialSchema = new mongoose.Schema({
   const Material = mongoose.model('Material', materialSchema);
   module.exports = Material;
 
-    // إعداد المسارات
-    app.get('/', (req, res) => {
-        res.send('Hello from the material sorting game server!');
-    });
 
     // Endpoint لإضافة مادة جديدة
     app.post('/api/materials', async (req, res) => {
@@ -217,7 +213,7 @@ app.get('/api/leaderboard', async (req, res) => {
 
 
 // Start the server
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
