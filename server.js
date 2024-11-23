@@ -7,7 +7,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-
+app.use(cors({
+    origin: ['http://localhost:3000', 'https://material-game.vercel.app'],
+    methods: ['GET', 'POST', 'DELETE', 'PUT'],
+}));
 
 
 mongoose.connect("mongodb+srv://abosalah:Abo_salah100@cluster0.vuac5.mongodb.net/material_sorting_game?retryWrites=true&w=majority", {
@@ -20,10 +23,7 @@ app.get('/', (req, res) => {
     res.send('Hello from Express server!');
 });
 
-app.use(cors({
-    origin: ['http://localhost:3000', 'https://non-killer-e47d.vercel.app'],
-    methods: ['GET', 'POST', 'DELETE', 'PUT'],
-}));
+
 
 
 const materialSchema = new mongoose.Schema({
