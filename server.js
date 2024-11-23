@@ -16,6 +16,7 @@ app.use(cors({
 mongoose.connect("mongodb+srv://abosalah:Abo_salah100@cluster0.vuac5.mongodb.net/material_sorting_game?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 5000,
 }).then(() => console.log('Database connected successfully'))
 .catch((err) => console.log('Error connecting to database', err));
 
