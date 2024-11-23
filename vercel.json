@@ -2,8 +2,20 @@
   "version": 2,
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/",
       "dest": "server.js"
+    },
+    {
+      "src": "/api/materials",
+      "dest": "/"
+    },
+    {
+      "src": "/api/materials/:name",
+      "dest": "/"
+    },
+    {
+      "src": "/api/signup",
+      "dest": "/"
     }
   ]
 }
