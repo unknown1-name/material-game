@@ -4,8 +4,8 @@
         let currentMaterialIndex = 0;
 
 
-        const isProduction = window.location.hostname === 'http://localhost:3000';
-        const baseURL = 'http://localhost:3000';
+        const isProduction = window.location.hostname === 'https://material-game.vercel.app';
+        const baseURL = 'https://material-game.vercel.app';
         
 
         let isLoggedIn = false; // حالة تسجيل الدخول
