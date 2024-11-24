@@ -21,7 +21,7 @@ mongoose.connect("mongodb+srv://abosalah:Abo_salah100@cluster0.vuac5.mongodb.net
 .catch((err) => console.log('Error connecting to database', err));
 
 app.get('/', (req, res) => {
-    res.send('Hello from Express server!');
+    res.sendFile(path.join(__dirname, './index.html'));
 });
 
 module.exports = app;
