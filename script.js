@@ -256,20 +256,6 @@
         // استدعاء الدالة بعد تحميل الصفحة
         document.addEventListener('DOMContentLoaded', fetchUserInfo);
 
-        const correctSound = new Audio('./correct-156911.mp3');
-        const wrongSound = new Audio('./wrong-47985.mp3');
-
-
-        function handleCorrectAnswer() {
-            correctSound.play();
-        }
-
-
-        function handleWrongAnswer() {
-            wrongSound.play();
-        }
-
-
         const apiBaseUrl = baseURL;
        
 
@@ -391,10 +377,10 @@
             const material = materials[currentMaterialIndex];
             if (material.isGood === isGood) {
                 score++;
-                handleCorrectAnswer()  
+                document.getElementById("succ").play();
                 document.querySelector(".message").innerHTML = "Correct ✅"
             } else {
-                handleWrongAnswer()  
+                document.getElementById("wrong").play();  
                 document.querySelector(".message").innerHTML = "Wrong ❌"
             }
             // تحديث النتيجة على الشاشة
