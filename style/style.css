@@ -711,5 +711,10 @@ ul.list-group .list-group-item button:hover {
         margin-top: 30px;
         justify-content: center;
     }
+
+    .certificate-box h2 {
+        font-size: 25px;
+    }
+    
 }
 
