@@ -4,8 +4,8 @@
         let currentMaterialIndex = 0;
 
 
-        const isProduction = window.location.hostname === 'https://material-game.vercel.app';
-        const baseURL = 'https://material-game.vercel.app';
+        const isProduction = window.location.hostname === 'https://uniform-auguste-moss1-52870268.koyeb.app';
+        const baseURL = 'https://uniform-auguste-moss1-52870268.koyeb.app';
         
 
         let isLoggedIn = false; // حالة تسجيل الدخول
