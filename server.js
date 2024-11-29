@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://uniform-auguste-moss1-52870268.koyeb.app'],
+    origin: ['http://localhost:3000', 'https://rich-francoise-mohameds-44b33287.koyeb.app'],
     methods: ['GET', 'POST', 'DELETE', 'PUT'],
 }));
 
