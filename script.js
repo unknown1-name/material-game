@@ -4,8 +4,8 @@
         let currentMaterialIndex = 0;
 
 
-        const isProduction = window.location.hostname === 'https://uniform-auguste-moss1-52870268.koyeb.app';
-        const baseURL = 'https://uniform-auguste-moss1-52870268.koyeb.app';
+        const isProduction = window.location.hostname === 'https://rich-francoise-mohameds-44b33287.koyeb.app';
+        const baseURL = 'https://rich-francoise-mohameds-44b33287.koyeb.app';
         
 
         let isLoggedIn = false; // حالة تسجيل الدخول
