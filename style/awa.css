@@ -1,8 +1,10 @@
+/* إعادة ضبط القيم الافتراضية */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #000;
     display: flex;
@@ -11,12 +13,14 @@ body {
     height: 100vh;
     padding: 20px;
 }
+
 .boxss {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+
 .video {
     display: flex;
     flex-direction: column;
@@ -27,12 +31,14 @@ body {
     max-width: 90%;
     width: 600px;
 }
-video {
+
+iframe {
     width: 100%;
     height: auto;
+    aspect-ratio: 16/9; /* يحافظ على نسبة العرض إلى الارتفاع تلقائيًا */
     border-radius: 10px;
-    outline: none;
 }
+
 .video button {
     padding: 12px;
     margin-top: 15px;
@@ -45,6 +51,22 @@ video {
     font-size: 16px;
     transition: background 0.3s;
 }
+
 .video button:hover {
     background-color: #333;
+}
+
+/* تحسين التوافق مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .video {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video button {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
