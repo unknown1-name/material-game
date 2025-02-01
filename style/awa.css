@@ -3,70 +3,65 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-}
-
-.boxss {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.video {
+    background-color: #f0f4f8;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px 8px #757474;
-    max-width: 90%;
-    width: 600px;
+    align-items: center;
+    
 }
 
-iframe {
+main {
+    margin-top: 4%;
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+.video-container video {
     width: 100%;
-    height: auto;
-    aspect-ratio: 16/9; /* يحافظ على نسبة العرض إلى الارتفاع تلقائيًا */
     border-radius: 10px;
 }
-
-.video button {
-    padding: 12px;
-    margin-top: 15px;
-    border: none;
-    background-color: #202020;
-    color: #fff;
+.bt {
+    display: flex;
+    justify-content: center;
+}
+.back-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
-    width: 100%;
-    cursor: pointer;
-    font-size: 16px;
     transition: background 0.3s;
 }
 
-.video button:hover {
-    background-color: #333;
+.back-button:hover {
+    background: #0056b3;
+}
+h2 {
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
-/* تحسين التوافق مع الشاشات الصغيرة */
 @media (max-width: 768px) {
-    .video {
-        width: 100%;
-        padding: 10px;
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
     }
-}
-
-@media (max-width: 480px) {
-    .video button {
-        font-size: 14px;
-        padding: 10px;
+    
+    .nav-bar ul {
+        margin-top: 10px;
+    }
+    
+    .auth-buttons {
+        margin-top: 10px;
     }
 }
